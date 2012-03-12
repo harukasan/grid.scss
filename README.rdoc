@@ -1,0 +1,9 @@
+= Grid.scss
+Authors:: harukasan <miruca@me.com>
+License:: Apache License 2.0
+          http://www.apache.org/licenses/LICENSE-2.0
+
+The idea is clearly brrowed from Bootstrap.
+Bootstrap is licensed under Apache License 2.0 by Twitter, inc.
+http://twitter.github.com/bootstrap/
+
