@@ -1,0 +1,107 @@
+/*
+ * = Grid.scss
+ * Authors:: harukasan <miruca@me.com>
+ * License:: Apache License 2.0
+ *           http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * The idea is clearly brrowed from Bootstrap.
+ * Bootstrap is licensed under Apache License 2.0 by Twitter, inc.
+ * http://twitter.github.com/bootstrap/
+ *
+ */
+.container {
+  width: 940px;
+  margin: 0 auto; }
+  .container:before, .container:after {
+    display: table;
+    content: "";
+    zoom: 1; }
+  .container:after {
+    clear: left; }
+
+.row {
+  margin-left: -20px; }
+  .row:before, .row:after {
+    display: table;
+    content: "";
+    zoom: 1; }
+  .row:after {
+    clear: left; }
+
+.span, .span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 20px; }
+
+.span1 {
+  width: 60px; }
+
+.offset1 {
+  margin-left: 100px; }
+
+.span2 {
+  width: 140px; }
+
+.offset2 {
+  margin-left: 180px; }
+
+.span3 {
+  width: 220px; }
+
+.offset3 {
+  margin-left: 260px; }
+
+.span4 {
+  width: 300px; }
+
+.offset4 {
+  margin-left: 340px; }
+
+.span5 {
+  width: 380px; }
+
+.offset5 {
+  margin-left: 420px; }
+
+.span6 {
+  width: 460px; }
+
+.offset6 {
+  margin-left: 500px; }
+
+.span7 {
+  width: 540px; }
+
+.offset7 {
+  margin-left: 580px; }
+
+.span8 {
+  width: 620px; }
+
+.offset8 {
+  margin-left: 660px; }
+
+.span9 {
+  width: 700px; }
+
+.offset9 {
+  margin-left: 740px; }
+
+.span10 {
+  width: 780px; }
+
+.offset10 {
+  margin-left: 820px; }
+
+.span11 {
+  width: 860px; }
+
+.offset11 {
+  margin-left: 900px; }
+
+.span12 {
+  width: 940px; }
+
+.offset12 {
+  margin-left: 980px; }

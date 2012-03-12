@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <title>A bit example of Grid.scss</title>
+    <link rel="stylesheet" href="grid.css" type="text/css" />
+    <style>
+      body {
+        font-family: "Lucida Grande", sans-serif;
+      }
+
+      .show-grid {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 2px 0;
+        border-radius: 4px;
+        background: #c7c7e1;
+        color: #333;
+        font-size: 13px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>940px wide, 12 columns by bits of SCSS</h1>
+      <p>The idea is clearly brrowed from Bootstrap by Twitter, Inc.</p>
+      <div class="row show-row">
+        <div class="span1 show-grid">1</div>
+        <div class="span1 show-grid">1</div>
+        <div class="span1 show-grid">1</div>
+        <div class="span1 show-grid">1</div>
+        <div class="span1 show-grid">1</div>
+        <div class="span1 show-grid">1</div>
+        <div class="span1 show-grid">1</div>
+        <div class="span1 show-grid">1</div>
+        <div class="span1 show-grid">1</div>
+        <div class="span1 show-grid">1</div>
+        <div class="span1 show-grid">1</div>
+        <div class="span1 show-grid">1</div>
+      </div>
+      <div class="row show-row">
+        <div class="span3 show-grid">3</div>
+        <div class="span3 show-grid">3</div>
+        <div class="span3 show-grid">3</div>
+        <div class="span3 show-grid">3</div>
+      </div>
+      <div class="row show-row">
+        <div class="span4 show-grid">4</div>
+        <div class="span2 show-grid">2</div>
+        <div class="span4 show-grid">4</div>
+        <div class="span2 show-grid">2</div>
+      </div>
+      <div class="row show-row">
+        <div class="span5 show-grid">5</div>
+        <div class="span1 show-grid">1</div>
+        <div class="span5 show-grid">5</div>
+        <div class="span1 show-grid">1</div>
+      </div>
+      <div class="row show-row">
+        <div class="offset2 span3 show-grid">3 with offset 2</div>
+        <div class="offset4 span3 show-grid">3 with offset 4</div>
+      </div>
+      <div class="row show-row">
+        <div class="offset4 span8 show-grid">8 with offset 4</div>
+      </div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,55 @@
+/*
+ * = Grid.scss
+ * Authors:: harukasan <miruca@me.com>
+ * License:: Apache License 2.0
+ *           http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * The idea is clearly brrowed from Bootstrap.
+ * Bootstrap is licensed under Apache License 2.0 by Twitter, inc.
+ * http://twitter.github.com/bootstrap/
+ *
+ */
+
+// Settings
+$columns:      12;   // number of columns
+$column_width: 60px; // column width
+$gutter_width: 20px; // gutter size
+
+
+.container {
+  width: $column_width * $columns + $gutter_width * ($columns - 1);
+  margin: 0 auto;
+  @include clearfix;
+}
+
+.row {
+  margin-left: -$gutter_width;
+  @include clearfix;
+}
+
+.span {
+  float: left;
+  margin-left: $gutter_width;
+}
+
+@for $i from 1 through $columns {
+  $span_width: $column_width * $i + $gutter_width * ($i - 1);
+  .span#{$i} {
+    width: $span_width;
+    @extend .span;
+  }
+  .offset#{$i} {
+    margin-left: $span_width + $gutter_width * 2;
+  }
+}
+
+@mixin clearfix {
+  &:before, &:after {
+    display: table;
+    content: "";
+    zoom: 1;
+  }
+  &:after {
+    clear: left;
+  }
+}
